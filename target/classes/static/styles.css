@@ -1,0 +1,14 @@
+footer {
+    bottom: 10;
+    color: black;
+    text-align: center;
+}
+
+footer a:hover {
+    color: lightblue;
+}
+
+body {
+    background-color: #d3d3d3;
+}
+
