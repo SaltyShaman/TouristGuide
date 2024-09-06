@@ -1,0 +1,29 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=IntelliJ IDEA
+
+###
+
+### Create a new tourist attraction
+POST http://localhost:8080/attractions
+Content-Type: application/json
+
+{
+  "name": "Eiffel Tower",
+  "description": "Iconic landmark in Paris"
+}
+
+### Get a tourist attraction by name
+GET http://localhost:8080/attractions/Eiffel%20Tower
+
+### Update a tourist attraction
+PUT http://localhost:8080/attractions/Eiffel%20Tower
+Content-Type: application/json
+
+{
+  "name": "Eiffel Tower",
+  "description": "Updated description"
+}
+
+### Delete a tourist attraction
+DELETE http://localhost:8080/attractions/Eiffel%20Tower
